@@ -41,12 +41,17 @@
 
       .shutdown {
         position: relative;
+        display: grid;
+        place-items: center;
         min-height: 100vh;
         padding: 48px;
         overflow: hidden;
       }
 
       .shutdown__brand {
+        position: absolute;
+        top: 48px;
+        left: 48px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -69,7 +74,7 @@
         flex-direction: column;
         align-items: center;
         width: min(100%, 900px);
-        margin: 0 auto;
+        margin: auto;
         padding: 22px 0;
       }
 
@@ -215,37 +220,6 @@
           >
           <span class="shutdown__title-line">of Our Journey</span>
         </h1>
-
-        <section class="shutdown__card" aria-label="TapTools shutdown message">
-          <img
-            class="shutdown__card-logo"
-            src="../images/logo_black.png"
-            width="48"
-            height="48"
-            alt="TapTools"
-          />
-          <div class="shutdown__message">
-            <p>TapTools has paused operations.</p>
-            <p>
-              Over the years, TapTools became an important part of the Cardano
-              ecosystem, serving over a million users and supporting projects
-              across the community.
-            </p>
-            <p>
-              While the platform is no longer active, we continue to believe
-              TapTools still holds significant value for the Cardano ecosystem
-              and are exploring opportunities for its next chapter.
-            </p>
-            <p>
-              This may be the end of one chapter, but we hope it is not the end
-              of the TapTools story.
-            </p>
-            <p>
-              Thank you for your trust, your support, and for helping us build
-              something that mattered.
-            </p>
-          </div>
-        </section>
 
         <a class="shutdown__contact" href="mailto:support@taptools.io"
           >Contact us</a
